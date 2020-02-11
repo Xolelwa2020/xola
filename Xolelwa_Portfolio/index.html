@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Ua-Compatible" content="ie=edge">
+    <title> Software Engineering With Xolie - Smart way to code</title>
+    <!-- Xolelwa core CSS-->
+    <link rel="stylesheet" href="index.css">
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>  
+<body>
+
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                </div>
+                <div class="logo">
+                    <img src="logo.png" alt="X Logo">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </div>
+    </header>
+    <div class="content">
+        <p>
+            She was born and breed in Khayelitsha, Cape Town.
+            Xolelwa Ami Agbeko is known for having a prominent voice in the modern society. 
+            A leader that takes action with responsibility to combat the struggles we face in today’s world.
+            Young, African woman subjected to change the status quo of Africa as a whole 
+            when it comes to woman empowerment in technology .
+        </p>
+        <p>
+            Xolelwa Ami Agbeko is an former intern at Younglings Africa 
+            She is also a dynamic social activist & social entrepreneur. 
+            She uses creative skills to develop, implement greater insights in different sectors in the economy.
+        </p>
+    </div>
+    
+    <script> type="text/javascript">
+        
+    //Menu toggle-button
+        
+$(document).ready(function() {
+    $(".menu-icon").on("click", function() {
+        $("nav-ul").toggleClass("showing");
+    })
+})
+
+//Scrolling Effect
+
+$(window).on("scroll", function() {
+            if ($(window).scrollTop()) {
+                $("nav").addClass('black');
+
+            }
+            else {
+                $('nav').removeClass('black');
+            }
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>
